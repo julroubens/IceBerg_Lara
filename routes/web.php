@@ -18,3 +18,7 @@ Route::get('/', function () {
 Route::get('/', [
 	'as' => 'index',
 	'uses' => 'PagesController@index']);
+
+	Route::get('services', function () {
+		return view('pages/services');
+	});
